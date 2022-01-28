@@ -1,0 +1,76 @@
+※DataType
+	- 전역변수 = Class 변수 = static 변수
+1) 어떤 종류의 데이터
+2) 메모리 올라가는 용량
+--------------Primitive DataType-----------------------------------------------------------------------------
+숫자형								Default DataType			Default Value(필드변수에 한정, 로컬변수는 기본 값 없음)
+	정수형 				
+		byte    (8bit)
+		short   (16bit)
+		int     (32bit)				int							0
+		long    (64bit)
+	
+	실수형 
+		float   (32bit)
+		double  (64bit)				double						0.0
+
+문자형
+		char    (16bit)											'\u0000'
+	- 자바는 유니코드를 지원한다(다른 언어로 변수/함수명 지원한다)
+	- char가 8bit가 아니다
+논리형
+		boolean (8bit)											false
+--------------Reference, Class DataType-----------------------------------------------------------------------
+		
+		
+※Constructor
+※Has A Relation
+※Encapsulation
+- 같은 클래스 내에서 접근만 허용되어야 vaild하다
+- Modifier(Access, Usage)를 통해 설정
+
+※Operator (++, --)
+
+※Condition
+※Looping
+
+※Array
+
+※Inheritance
+부모가 가진 것을 물려받는 것 + 자식은 자신만의 멤버를 추가하는 것
+
+※Entity 추출 작업
+실체 클래스에 맞는 Type을 지정... Class 설계
+
+1.
+class Shirt{
+
+}
+
+2. field를 추출
+3. field에 값이 주입되는 통로를 지정(field 초기화)
+	1)생성자 주입 (class와 LifeCycle을 함께하는 멤버)
+	2)setter 주입 (class와 LifeCycle을 함께하지 않는 멤버)
+4. 주입된 값을 가져올 수 있는 function
+
+
+※ 객체 생성 과정
+1. stack 영역에 참조변수를 위한 공간 할당
+2. heap 영역에 클래스 묵시적 초기화 및 할당
+3. 객체 주소 값 획득
+4. stack에 할당받은 영역에 객체 주소 값 할당
+5. stack과 heap의 객체 사이에 reference 발생
+6. 생성자 구동에 의한 초기화 발생(명시적 초기화)
+
+
+========================== 1/26 ==========================
+1. Polymorphism
+2. static
+3. Interface
+4. CollectionAPI
+
+							Collection									|					Map
+																		|
+				Set(Unique)					List(Ordered)				|			HashMap		HashTable
+																		|
+			HashSet				Vector	ArrayList	LinkedList			|						Properties
